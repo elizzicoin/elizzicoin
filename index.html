@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ElizziCoin (ELC) — First Crypto for Territorial.io</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Header / Nav */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #222;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .logo p {
+            font-size: 0.85rem;
+            color: #aaa;
+            margin-top: 0.25rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: #ccc;
+        }
+
+        /* Hero / Price Section */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .price-card {
+            background: #0a0a0a;
+            border: 1px solid #1f1f1f;
+            border-radius: 2rem;
+            padding: 2rem;
+            display: inline-block;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .price-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #aaa;
+        }
+
+        .price-value {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .price-change {
+            font-size: 1rem;
+            color: #4caf50;
+            background: #0e1f12;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 20px;
+        }
+
+        /* Section generic */
+        .section {
+            margin: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #fff;
+            padding-left: 1rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        .info-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-card p, .info-card li {
+            color: #ccc;
+            font-size: 0.95rem;
+        }
+
+        .info-card ul {
+            padding-left: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .info-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Price chart mock */
+        .chart-mock {
+            background: #0a0a0a;
+            border: 1px solid #222;
+            border-radius: 1.5rem;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            height: 160px;
+            margin: 1rem 0;
+        }
+
+        .bar {
+            background-color: #2c2c2c;
+            width: 12%;
+            border-radius: 6px 6px 0 0;
+            transition: height 0.3s;
+        }
+
+        .bar.green {
+            background-color: #2e7d32;
+        }
+
+        .x-axis {
+            color: #666;
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            border-top: 1px solid #111;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #555;
+        }
+
+        @media (max-width: 700px) {
+            .nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .price-value {
+                font-size: 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <h1>ElizziCoin <span style="font-weight: 300;">| ELC</span></h1>
+                <p>First community-driven cryptocurrency for Territorial.io</p>
+            </div>
+            <div class="nav-links">
+                <a href="#">Price</a>
+                <a href="#">Economy</a>
+                <a href="#">Roadmap</a>
+                <a href="#">Trade</a>
+            </div>
+        </div>
+
+        <!-- HERO / PRICE SECTION -->
+        <div class="hero">
+            <div class="price-card">
+                <div class="price-label">ELC / GOLD</div>
+                <div class="price-value">1 ELC = 1.00 Gold</div>
+                <div class="price-change">▲ +0.00% (24h)</div>
+            </div>
+        </div>
+
+        <!-- ECONOMY EXPLAINED -->
+        <div class="section">
+            <h2 class="section-title">How ElizziCoin works</h2>
+            <div class="grid-2">
+                <div class="info-card">
+                    <h3>📈 Buy → Price ↑</h3>
+                    <p>Every time someone buys ELC with Gold, the price increases depending on the volume. The more people invest, the higher the value climbs. <strong>Early buyers win the most.</strong></p>
+                </div>
+                <div class="info-card">
+                    <h3>📉 No buys → Price ↓</h3>
+                    <p>If there are no purchases for 24 hours, the price drops by 2%. This keeps the economy active and rewards long-term belief.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🔄 Withdraw anytime</h3>
+                    <p>Sell your ELC back to the reserve at current price. Your profit is real — you take Gold out of the system, just like a real crypto exchange.</p>
+                </div>
+                <div class="info-card">
+                    <h3>⚙️ Backed by Gold</h3>
+                    <p>Every ELC in circulation is backed by Gold in our reserve. No inflation, no hidden minting — fully transparent.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- VISUAL PRICE SIMULATION (simple chart) -->
+        <div class="section">
+            <h2 class="section-title">Price simulation (7 days)</h2>
+            <div class="chart-mock">
+                <div class="chart-bars" id="chartBars">
+                    <!-- bars generated with JS -->
+                </div>
+                <div class="x-axis">Day 1 &nbsp;&nbsp; Day 2 &nbsp;&nbsp; Day 3 &nbsp;&nbsp; Day 4 &nbsp;&nbsp; Day 5 &nbsp;&nbsp; Day 6 &nbsp;&nbsp; Day 7</div>
+                <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem; color: #666;">* based on current buy pressure (conceptual)</p>
+            </div>
+        </div>
+        <div class="info-card" style="text-align: center; margin-top: 2rem;">
+    <h3>📢 How to buy ELC</h3>
+    <p>ElizziCoin is traded manually via Discord for full transparency.</p>
+    <a href="https://discord.gg/RuAmUmzt8e" target="_blank" style="display: inline-block; background: white; color: black; padding: 0.75rem 1.5rem; border-radius: 2rem; text-decoration: none; font-weight: 600; margin-top: 1rem;">Join Discord & Trade →</a>
+    <p style="font-size: 0.8rem; margin-top: 1rem;">See <a href="how-to-buy.html" style="color: white;">full instructions</a></p>
+</div>
+
+        <footer>
+            <p>ElizziCoin (ELC) — experimental in-game currency. Gold is transferred manually via trusted [ELIZZI] members. All transactions are recorded.</p>
+            <p style="margin-top: 0.5rem;">© 2026 [ELIZZI] Clan</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple dynamic chart to show price trend (just for visual impact)
+        function generateRandomBars() {
+            const barContainer = document.getElementById('chartBars');
+            if (!barContainer) return;
+            const heights = [];
+            for (let i = 0; i < 7; i++) {
+                let height;
+                if (i < 3) height = 30 + Math.random() * 40;
+                else if (i >= 3 && i < 5) height = 50 + Math.random() * 50;
+                else height = 80 + Math.random() * 50;
+                heights.push(Math.min(140, Math.max(25, height)));
+            }
+            barContainer.innerHTML = '';
+            heights.forEach((h, idx) => {
+                const bar = document.createElement('div');
+                bar.className = 'bar';
+                if (idx >= 5) bar.classList.add('green');
+                bar.style.height = h + 'px';
+                barContainer.appendChild(bar);
+            });
+        }
+        generateRandomBars();
+    </script>
+</body>
+</html>
